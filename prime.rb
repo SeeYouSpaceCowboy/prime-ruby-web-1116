@@ -1,5 +1,9 @@
 def prime?(num)
-  	array = (2..num-1).select { |i|
+    if num <= 1
+      return false
+    end
+
+  	array = (2..num.abs-1).select { |i|
     	num%i == 0
     }
 
